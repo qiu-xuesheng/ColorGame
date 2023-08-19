@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<body bgcolor="#AAAAAA" align="center">
+<h1>顏色變辨辯</h1>
+<h2>請用閩南語唸出......</h2>
+<button onclick="myFunction()">Click me</button>
+<p id="demo" style="font-size:200px; font-family:cwTeXKai;"></p>
+
+
+
+
+
+<script>
+//var y;
+//if (x==1){y = "黑";}
+function myFunction() {
+  var x = Math.floor(Math.random()*8)+1;
+  let y = Math.floor(Math.random()*8)+1;
+  if (x==1){
+    word = "黃";
+  }
+  if (x==2){
+    word = "藍";
+  }
+  if (x==3){
+    word = "黑";
+  }
+  if (x==4){
+    word = "白";
+  }
+  if (x==5){
+    word = "紅";
+  }
+  if (x==6){
+    word = "橘";
+  }
+  if (x==7){
+    word = "綠";
+  }
+  if (x==8){
+    word = "咖啡";
+  }  
+  if (y==1){
+    color = "#FFFF00";
+  }
+  if (y==2){
+    color = "#0000FF";
+  }
+  if (y==3){
+    color = "#000000";
+  }
+  if (y==4){
+    color = "#FFFFFF";
+  }
+  if (y==5){
+    color = "#FF0000";
+  }
+  if (y==6){
+    color = "#FF8800";
+  }
+  if (y==7){
+    color = "#00FF00";
+  }
+  if (y==8){
+    color = "#A42D00";
+  }  
+  
+  document.getElementById("demo").innerHTML = word;
+  document.getElementById("demo").style.color = color;
+}
+</script>
+
+</body>
+</html>
